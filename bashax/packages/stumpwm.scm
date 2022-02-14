@@ -11,12 +11,11 @@
    (inherit sbcl-stumpwm-wifi)
    (name "sbcl-stumpwm-battery-portable")
    (arguments
-    '(#:asd-system-name
-      "battery-portable"
-      #:tests? #f
-      #:phases
-      (modify-phases %standard-phases
-                     (add-after 'unpack 'chdir (lambda _ (chdir "modeline/battery-portable") #t)))))
+    '(#:asd-systems '("battery-portable")
+                    #:tests? #f
+                    #:phases
+                    (modify-phases %standard-phases
+                                   (add-after 'unpack 'chdir (lambda _ (chdir "modeline/battery-portable") #t)))))
    (home-page
     "https://github.com/stumpwm/stumpwm-contrib/tree/master/modeline/battery-portable")
    (synopsis "Battery information for StumpWM")
