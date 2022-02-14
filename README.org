@@ -5,7 +5,9 @@ Use at your own peril.
 #+begin_src scheme
 (cons* (channel
         (name 'bashax)
-        (url "https://github.com/anticomputer/bashax"))
+        (url "https://github.com/anticomputer/bashax")
+        (branch "main"))
+       ;; my packages will likely depend on nonguix a bunch
        (channel
         (name 'nonguix)
         (url "https://gitlab.com/nonguix/nonguix"))
