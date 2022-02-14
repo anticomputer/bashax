@@ -8,7 +8,7 @@
 (define-public sbcl-stumpwm-battery-portable
   (package
    (inherit stumpwm-contrib)
-   (name "sbcl-stumpwm-kbd-layouts")
+   (name "sbcl-stumpwm-battery-portable")
    (arguments
     '(#:asd-system-name
       "battery-portable"
