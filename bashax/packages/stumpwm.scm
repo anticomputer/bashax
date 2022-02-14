@@ -7,7 +7,8 @@
 
 (define-public sbcl-stumpwm-battery-portable
   (package
-   (inherit stumpwm-contrib)
+   ;; since stumpwm-contrib isn't public, we bum off of sbcl-stumpwm-wifi instead
+   (inherit sbcl-stumpwm-wifi)
    (name "sbcl-stumpwm-battery-portable")
    (arguments
     '(#:asd-system-name
@@ -20,4 +21,7 @@
     "https://github.com/stumpwm/stumpwm-contrib/tree/master/modeline/battery-portable")
    (synopsis "Battery information for StumpWM")
    (description "Battery information for StumpWM")
+   ;; add other systems as needed
+   (supported-systems
+    (filter (lambda (a) (string-contains a "linux")) %supported-systems))
    (license license:gpl3+)))
