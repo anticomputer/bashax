@@ -1,0 +1,13 @@
+* BASHAX: my custom guix package channel
+
+Use at your own peril.
+
+#+begin_src scheme
+(cons* (channel
+        (name 'bashax)
+        (url "https://github.com/anticomputer/bashax"))
+       (channel
+        (name 'nonguix)
+        (url "https://gitlab.com/nonguix/nonguix"))
+       %default-channels)
+#+end_src
