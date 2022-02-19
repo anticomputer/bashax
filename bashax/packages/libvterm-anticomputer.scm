@@ -21,7 +21,8 @@
      (method git-fetch)
      (uri (git-reference
            (url "https://github.com/anticomputer/libvterm")
-           (commit "65dbda3ed214f036ee799d18b2e693a833a0e591")))
+           ;; git ref from https://github.com/akermu/emacs-libvterm/blob/master/CMakeLists.txt
+           (commit "54c03b21f763fa775a4c0643a9d8326342873179")))
      (sha256
       (base32
        "0r6yimzbkgrsi9aaxwvxahai2lzgjd1ysblr6m6by5w459853q3n"))))
