@@ -1,4 +1,17 @@
 ;; use my own fork of libvterm for emacs-vterm support
+(define-module (bashax packages libvterm-anticomputer)
+  #:use-module ((guix licenses) #:prefix license:)
+  #:use-module (guix build-system cmake)
+  #:use-module (guix build-system gnu)
+  #:use-module (guix download)
+  #:use-module (guix git-download)
+  #:use-module (guix packages)
+  #:use-module (guix utils)
+  #:use-module (gnu packages)
+  #:use-module (gnu packages autotools)
+  #:use-module (gnu packages perl)
+  #:use-module (gnu packages pkg-config))
+
 (define-public libvterm-anticomputer
   (package
    (name "libvterm-anticomputer")
