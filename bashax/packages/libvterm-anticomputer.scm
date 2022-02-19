@@ -24,7 +24,7 @@
            (commit "65dbda3ed214f036ee799d18b2e693a833a0e591")))
      (sha256
       (base32
-       "1pfkhbbihd2kvaza707vl2nvk7bxaawmb37wf9v6d72mjng38w5w"))))
+       "0r6yimzbkgrsi9aaxwvxahai2lzgjd1ysblr6m6by5w459853q3n"))))
    (build-system gnu-build-system)
    (arguments
     `(#:make-flags
