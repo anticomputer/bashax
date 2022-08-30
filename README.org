@@ -19,3 +19,5 @@ Thanks to @daviwil for his excellent guix guides which remove a lot of the
 bootstrapping pains for new guix users. This channel was bootstrapped off of
 his examples and his nonguix bootstrapping guides are a lifesaver for real
 world guix use: https://github.com/daviwil/channel-x
+
+-- sign
